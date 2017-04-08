@@ -1,6 +1,6 @@
 body {
     background-color: #ecf0f1;
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;;
     color: #2c3e50;
     text-align: center;
 }
@@ -37,5 +37,5 @@ a, a.visited {
 }
 
 .footer {
-    font-family:monospace;
+    font-family: 'Space Mono', monospace;
 }
