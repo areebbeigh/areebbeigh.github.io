@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <title>Areeb Beigh</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/883c6aea74.css">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body onload="updateYr();">
+        <div class="container">
+            <img src="https://avatars3.githubusercontent.com/u/15276828?v=3&s=460" class="avatar" /><br /><br />
+            <a href="http://areeb12.pythonanywhere.com" class="weblink">VISIT MY PORTFOLIO</a>
+            <h2>DISPLAYING A PART OF MY LIFE WRITTEN IN CODE</h2>
+            <div class="col">
+                <a href="https://github.com/areebbeigh" title="Github"><i class="fa fa-github-square fa-5x"></i></a>
+                <a href="https://instagram.com/areebbeigh" title="Instagram"><i class="fa fa-instagram fa-5x"></i></a>
+                <a href="https://facebook.com/areeb12" title="Facebook"><i class="fa fa-facebook-square fa-5x"></i></a>
+            </div>
+            <div class="footer">
+                <h3>COPYRIGHT &copy; <font id="yr"></font> AREEB BEIGH &lt;areebbeigh@gmail.com&gt;</h3>
+            </div>
+        </div>
+    </body>
+    <script>
+        function updateYr() {
+            document.getElementById('yr').innerHTML = new Date().getFullYear()
+        }
+    </script>
+</html>
