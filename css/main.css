@@ -1,0 +1,50 @@
+* { font-family: 'Roboto'; }
+
+.thin {
+  font-weight: 200;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.center {
+  text-align: center;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.footer-contact {
+  padding: 10px;
+  display: inline;
+  text-decoration: none;
+  color: initial;
+}
+
+.footer-contact p {
+  display: inline;
+  position: relative;
+  bottom: 2px;
+}
+
+.footer-contact i {
+  font-size: 1.2em;
+}
+
+.footer-contact span {
+  /* font-size: 0.9em; */
+}
