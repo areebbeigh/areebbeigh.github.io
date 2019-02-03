@@ -30,7 +30,6 @@ body {
 
 .footer-contact {
   padding: 10px;
-  display: inline;
   text-decoration: none;
   color: initial;
 }
@@ -47,4 +46,10 @@ body {
 
 .footer-contact span {
   /* font-size: 0.9em; */
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-contact {
+    display: block;
+  }
 }
