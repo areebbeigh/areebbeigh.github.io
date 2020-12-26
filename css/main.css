@@ -55,6 +55,7 @@ a:hover {
 
 .content-container {
   color: #282828;
+  line-height: 2em;
 }
 
 .content-container .intro .me {
