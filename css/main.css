@@ -23,7 +23,6 @@ a:hover {
   background: #fff;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
-  row-gap: 30px;
   text-align: justify;
 }
 
@@ -32,6 +31,7 @@ a:hover {
   grid-template-columns: 80% 20%;
   align-items: end;
   padding: 20px 0;
+  align-items: center;
 }
 
 .nav .nav-title h2 {
@@ -55,12 +55,14 @@ a:hover {
 
 .content-container {
   color: #282828;
-  line-height: 2em;
+  line-height: 1.8em;
 }
 
 .content-container .intro .me {
   grid-area: me;
-  place-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content-container .intro .content {
@@ -70,11 +72,36 @@ a:hover {
 .content-container .intro {
   display: grid;
   grid-template-columns: [intro-text] 60% [me] 40%;
-  //column-gap: 50px;
 }
 
 @media only screen and (max-width: 950px) {
   .container {
     padding: 20px 25px;
+  }
+
+  .nav {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .nav .nav-links {
+    margin-top: 15px;
+    grid-template-columns: 1fr;
+  }
+
+  .nav .nav-links a {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .nav .nav-title {
+    text-align: center;
+  }
+
+  .content-container .intro {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "me"
+      "intro-text";
   }
 }
