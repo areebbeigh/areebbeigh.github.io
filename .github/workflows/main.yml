@@ -30,10 +30,5 @@ jobs:
           git fetch
           git checkout deploy
           git stash apply
-      - uses: stefanzweifel/git-auto-commit-action@v4.8.0
-        with:
-          commit_message: 'Deploy'
-          branch: 'deploy'
-          repository: 'output'
-          file_pattern: '-A'
-          skip_dirty_check: true
+          git commit -m 'Deploy'
+          git push origin deploy -f
