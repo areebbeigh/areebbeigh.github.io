@@ -1,6 +1,0 @@
-{
-    "python.pythonPath": "/home/areebbeigh/virtualenvs/mysite/bin/python",
-    "python.linting.pylintEnabled": false,
-    "python.linting.pylamaEnabled": true,
-    "python.linting.enabled": true
-}
