@@ -9,7 +9,7 @@
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="{{url_for('static', filename='css/main.css')}}"
+      href="{{static('css/main.css')}}"
     />
     <link
       rel="stylesheet"
@@ -30,8 +30,9 @@
           <small><i>Work in progress. Might take a while :)</i></small>
         </div>
         <div class="nav-links">
-          <a href="">Projects</a>
-          <a href="">Resume</a>
+          <a href="/">Home</a>
+          <a href="/projects.html">Projects</a>
+          <a href="{{resume_link}}">Resume</a>
         </div>
       </div>
       <div class="content-container">
