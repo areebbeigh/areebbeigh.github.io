@@ -25,3 +25,4 @@ jobs:
           commit_message: 'Deploy'
           branch: 'deploy'
           file_pattern: 'output/**'
+          skip_dirty_check: true
