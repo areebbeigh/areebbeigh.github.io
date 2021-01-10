@@ -29,4 +29,5 @@ jobs:
         with:
           commit_message: 'Deploy'
           branch: 'deploy'
+          repository: 'output'
           skip_dirty_check: true
