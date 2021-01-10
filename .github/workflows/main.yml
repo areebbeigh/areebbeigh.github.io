@@ -26,12 +26,15 @@ jobs:
           cp -r output/** ../temp/
 
           git clean -f
-          git config user.email "areebbeigh@users.noreply.github.com"
-          git config user.name "areebbeigh[bot]"
           
           git fetch
           git checkout deploy
           cp -r ../temp/** ./
-          git add -A
-          git commit -m 'Deploy'
-          git push origin deploy -f
+          
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Deploy'
+          branch: 'deploy'
+          skip_fetch: true
+          skip_dirty_check: true
+          file_pattern: '*'
