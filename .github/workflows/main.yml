@@ -26,11 +26,13 @@ jobs:
           cd output
           git init .
           git config user.email "areebbeigh@users.noreply.github.com"
-          git config --global user.name "areebbeigh"
+          git config user.name "areebbeigh"
+          git status
           git add -A
           git stash
           git fetch
           git checkout deploy
+          rm -rf ./**
           git stash apply
           git commit -m 'Deploy'
           git push origin deploy -f
