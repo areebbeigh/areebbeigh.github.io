@@ -36,4 +36,3 @@ jobs:
           commit_message: 'Deploy'
           branch: 'deploy'
           skip_fetch: true
-          file_pattern: '-A'
