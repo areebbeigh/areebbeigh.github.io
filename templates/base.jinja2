@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Areeb Beigh&apos;s personal homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{url_for('static', filename='css/main.css')}}" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="nav-title">
+          <h2>Areeb Beigh</h2>
+          <small><i>Work in progress. Might take a while :)</i></small>
+        </div>
+        <div class="nav-links">
+          <a href="">Projects</a>
+          <a href="">Resume</a>
+        </div>
+      </div>
+      <div class="content-container">
+      {% block body %}{% endblock %}
+      </div>
+    </div>
+  </body>
+</html>
