@@ -26,6 +26,7 @@ jobs:
           cd output
           git init .
           git stash
+          git fetch
           git checkout deploy
           git stash apply
       - uses: stefanzweifel/git-auto-commit-action@v4.8.0
