@@ -4,11 +4,20 @@ import shutil
 from jinja2 import (Environment, FileSystemLoader,
                     select_autoescape, StrictUndefined)
 
-from config import RENDER_LIST, OUTPUT_DIR, STATICFILES_DIR
+from config import (RENDER_LIST, OUTPUT_DIR, STATICFILES_DIR, GLOBAL_CONTEXT)
 
 
 def url_for(base, filename):
+    # print(base, filename)
     return os.path.join(base, filename)
+
+
+def static(filename):
+    return url_for('static', filename)
+
+
+def image_url(filename):
+    return url_for('static/img', filename)
 
 
 env = Environment(
@@ -18,6 +27,9 @@ env = Environment(
 )
 env.globals.update({
     'url_for': url_for,
+    'static': static,
+    'image_url': image_url,
+    **GLOBAL_CONTEXT,
 })
 
 shutil.rmtree(OUTPUT_DIR, ignore_errors=True)

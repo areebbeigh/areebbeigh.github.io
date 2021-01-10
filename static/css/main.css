@@ -47,6 +47,17 @@ a:hover {
   margin: auto;
 }
 
+.footer {
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footer a {
+  padding: 10px;
+}
+
 #photo {
   border-radius: 100%;
   display: inline-block;

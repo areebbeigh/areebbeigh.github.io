@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Areeb Beigh&apos;s personal homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="{{url_for('static', filename='css/main.css')}}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="{{url_for('static', filename='css/main.css')}}"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous" 
+      crossorigin="anonymous"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400"
@@ -30,7 +35,14 @@
         </div>
       </div>
       <div class="content-container">
-      {% block body %}{% endblock %}
+        {% block body %}{% endblock %}
+      </div>
+      <div class="footer">
+        {% for link, img, _ in social_links %}
+        <a href="{{ link }}"
+          ><img height="23" width="23" src="{{ image_url(img) }}"
+        /></a>
+        {% endfor %}
       </div>
     </div>
   </body>
