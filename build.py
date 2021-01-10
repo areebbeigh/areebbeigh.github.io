@@ -51,7 +51,7 @@ for job in RENDER_LIST:
 
     html = template.render(job['context'])
     with open(output_file, 'w') as f:
-        print(f"{job['name']} -> {output_file}")
+        print(f"{job['name']}")
         f.write(html)
 
 shutil.copytree(STATICFILES_DIR, os.path.join(OUTPUT_DIR, 'static'))
