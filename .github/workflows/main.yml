@@ -34,5 +34,6 @@ jobs:
           git checkout deploy
           rm -rf ./**
           git stash apply
+          git checkout master static/
           git commit -m 'Deploy'
           git push origin deploy -f
