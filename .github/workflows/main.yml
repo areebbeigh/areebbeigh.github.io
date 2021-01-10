@@ -25,6 +25,7 @@ jobs:
           mv .git output/
           cd output
           git init .
+          git add -A
           git stash
           git fetch
           git checkout deploy
