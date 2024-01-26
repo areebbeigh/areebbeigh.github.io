@@ -21,7 +21,7 @@ GLOBAL_CONTEXT = {
         ('https://t.me/xnihpue/', 'telegram.svg', 'Telegram'),
         ('mailto:areebbeigh@gmail.com', 'gmail.svg', 'GMail'),
     ],
-    'resume_link': 'https://drive.google.com/file/d/1k0lVuLZ7IfeNAA6_f_h0inMGe_tZKXx_/view',
+    'resume_link': 'https://drive.google.com/file/d/1ODA60rN0ogEABuEz7llyiqsI5_ashRFS/view',
 }
 OUTPUT_DIR = os.path.join(BASE_DIR, 'output')
 STATICFILES_DIR = os.path.join(BASE_DIR, 'static')
